@@ -1,0 +1,117 @@
+@import "mixin";
+
+.footer {
+    padding: 60px 0 196px 0;
+    border-radius: 80px 80px 0 0;
+    background-color: #000000;
+    @media(max-width: 767px) { 
+        border-radius: 40px 40px 0 0;
+    }
+    &__container {
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    &__col-01 {
+        grid-column-start: 1;
+    }
+
+    &__logo { 
+        color: var(--white, #FFF);
+        text-align: center;
+        font-family: 'Unbounded', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        padding: 10px;
+        transition: all 0.3s ease 0s;
+        &:hover { 
+            color: #E5F355;
+        }
+    }
+
+    &__col-02 {
+        grid-column-start: 2;
+    }
+
+    &__title {
+        color: var(--white, #FFF);
+        font-family: 'Unbounded', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 26px */
+        padding: 10px;
+    }
+
+    &__menu {
+        
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {
+        
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 10px;
+        width: fit-content;
+        transition: all 0.3s ease 0s;
+
+        color: var(--white, #FFF);
+        font-family: 'Unbounded', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+        &:hover { 
+            color: #E5F355;
+        }
+    }
+
+    &__col-03 {
+        grid-column-start: span 2;
+        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        padding: 24px;
+    }
+
+    &__address {
+        
+    }
+
+    &__address__item {
+        color: #fff;
+        font-family: "Unbounded", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+    &__address-link {
+        display: flex;
+        margin: 18px 0 0 0;
+        color: #fff;
+        font-family: 'Unbounded', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+}

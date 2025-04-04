@@ -1,0 +1,80 @@
+@import 'mixin';
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body { 
+	font-family: "Space Grotesk", sans-serif;
+	/* font-family: "Manrope", sans-serif; */
+	font-size: 16px;
+	color: #fff;
+	line-height: 100%;
+	font-weight: 400;
+	margin: 0;
+	background-color: #000000;
+	overflow-x: hidden;
+
+	&._stop { 
+		overflow: hidden;
+	}
+	
+	&::-webkit-scrollbar {
+		background: transparent;
+		width: 10px;
+	}
+	
+	&::-webkit-scrollbar-track {
+		background: #15151F;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		background-color: #E6F355;
+		border-radius: 100px;
+	}
+
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	padding: 0 16px;
+
+}
+
+#preloader { 
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #1465FF;
+	
+	img { 
+		display: flex;
+		width: 200px;
+		object-fit: cover;
+		margin: 0 auto;
+	}
+
+	&._hide { 
+		display: none;
+	}
+}
+
+@keyframes bounce-custom {
+    0%, 100% {
+        transform: translateY(0px); 
+    }
+    50% {
+        transform: translateY(10px); 
+    }
+}
+
+/* Marquee for contacts section */

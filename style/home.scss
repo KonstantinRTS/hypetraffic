@@ -1,0 +1,141 @@
+@import "mixin";
+
+.home-hero {
+    padding: 156px 0 211px 0;
+    overflow: hidden;
+    /* background-image: url('../images/home-hero-01.svg'); */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    position: relative;
+    &__container {
+    }
+
+    &__body {
+
+    }
+
+    &__title {
+        color: var(--white, #fff);
+        text-align: center;
+        font-family: "Unbounded", sans-serif;
+        @include adaptiv-value("font-size", 80, 40, 1);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        max-width: 800px;
+        width: 100%;
+        margin: 24px auto 0 auto;
+
+        color: var(--white, #fff);
+        text-align: center;
+        font-family: "Unbounded", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%;
+
+        @media (max-width: 992px) {
+            max-width: 100%;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 100px;
+        background: #e5f355;
+        padding: 16px 36px;
+        margin: 40px auto 0 auto;
+
+        color: #000;
+        font-family: 'Unbounded', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        @media(max-width: 767px) { 
+            width: 100%;
+            padding: 16px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 65px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+
+.home-scale {
+    background-color: #6E3BF8;
+    border-radius: 80px 80px 0 0;
+    padding: 80px 0 140px 0;
+    background-image: url('../images/home-hero-05.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    margin-bottom: -60px;
+    @media(max-width: 767px) { 
+        border-radius: 40px 40px 0 0;
+        padding: 60px 0 140px 0;
+        background-image: url('../images/home-hero-06.png');
+    }
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__title {
+        color: #FFF;
+        text-align: center;
+        font-family: 'Unbounded', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        text-transform: capitalize;
+    }
+
+    &__text {
+        margin: 16px 0 0 0;
+        color: #FFF;
+        text-align: center;
+        font-family: 'Unbounded', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 130%; 
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        border-radius: 100px;
+        background: #e5f355;
+        padding: 16px 36px;
+        margin: 40px auto 0 auto;
+
+        color: #000;
+        font-family: 'Unbounded', sans-serif;
+        @include adaptiv-value('font-size', 20, 13, 1);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        @media(max-width: 767px) { 
+            width: 100%;
+            padding: 16px 10px;
+        }
+    }
+}

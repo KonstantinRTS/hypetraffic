@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 16px 0;
+}
+.header__body {
+  border-radius: 100px;
+  border: 0.5px solid rgba(240, 241, 241, 0.5);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.header__logo {
+  color: #fff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  transition: all 0.3s ease 0s;
+}
+.header__logo:hover {
+  color: #E5F355;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+  transition: all 0.3s ease 0s;
+}
+.header__link:hover {
+  color: #E5F355;
+}/*# sourceMappingURL=header.css.map */

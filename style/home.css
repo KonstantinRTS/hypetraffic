@@ -70,7 +70,7 @@
 }
 
 .home-scale {
-  background-color: #6E3BF8;
+  background-color: #6e3bf8;
   border-radius: 80px 80px 0 0;
   padding: 80px 0 140px 0;
   background-image: url("../images/home-hero-05.png");
@@ -87,7 +87,7 @@
   }
 }
 .home-scale__title {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Unbounded", sans-serif;
   font-size: 40px;
@@ -98,7 +98,7 @@
 }
 .home-scale__text {
   margin: 16px 0 0 0;
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Unbounded", sans-serif;
   font-size: 14px;
@@ -133,4 +133,139 @@
     width: 100%;
     padding: 16px 10px;
   }
+}
+
+.home-reviews {
+  border-radius: 80px 80px 0 0;
+  padding: 80px 0 160px 0;
+  background-color: #f4f5fd;
+  margin-bottom: -80px;
+}
+@media (max-width: 767px) {
+  .home-reviews {
+    border-radius: 40px 40px 0 0;
+    padding: 60px 0 140px 0;
+  }
+}
+.home-reviews__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #e1dcfc;
+  color: #6e3bf8;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+@media (max-width: 1272px) {
+  .home-reviews__label {
+    font-size: calc(10px + 4 * (100vw - 360px) / 912);
+  }
+}
+.home-reviews__title {
+  margin: 24px 0 0 0;
+  color: #000;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+@media (max-width: 1272px) {
+  .home-reviews__title {
+    font-size: calc(24px + 16 * (100vw - 360px) / 912);
+  }
+}
+.home-reviews__text {
+  max-width: 870px;
+  margin: 16px auto 0 auto;
+  color: #000;
+  text-align: center;
+  font-family: "Unbounded", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 130%;
+}
+.home-reviews__items {
+  margin: 60px 0 0 0;
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 992px) {
+  .home-reviews__items {
+    flex-direction: column;
+  }
+}
+.home-reviews__item {
+  width: 33.3333%;
+  border-radius: 16px;
+  background: linear-gradient(141deg, rgba(255, 255, 255, 0) 30.62%, #6e3bf8 158.64%);
+  padding: 40px;
+  position: relative;
+  min-height: 342px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-reviews__item::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  width: 80px;
+  height: 60px;
+  background-image: url("../images/home-quote.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+@media (max-width: 992px) {
+  .home-reviews__item {
+    width: 100%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+}
+.home-reviews__quote {
+  color: #000;
+  font-family: "Unbounded", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+@media (max-width: 1272px) {
+  .home-reviews__quote {
+    font-size: calc(20px + 8 * (100vw - 360px) / 912);
+  }
+}
+.home-reviews__name {
+  margin: 16px 0 0 0;
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+.home-reviews__job {
+  color: #000;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }/*# sourceMappingURL=home.css.map */

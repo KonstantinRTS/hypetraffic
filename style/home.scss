@@ -941,6 +941,9 @@
         background-position: left top;
         background-repeat: no-repeat;
         background-size: contain;
+        @media(max-width: 767px) { 
+            display: none;
+        }
     }
     @media (max-width: 767px) {
         border-radius: 40px 40px 0 0;
@@ -1001,7 +1004,8 @@
         display: flex;
         gap: 40px;
         @media (max-width: 992px) {
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+            gap: 0;
         }
     }
 
@@ -1017,13 +1021,17 @@
     }
 
     &__desc {
-        margin: auto 0 0 0;
+        margin: auto 0 65px 0;
         color: #000;
         font-family: "Unbounded", sans-serif;
         font-size: 14px;
         font-style: normal;
         font-weight: 300;
         line-height: 130%;
+
+        @media(max-width: 767px) { 
+            margin: 0;
+        }
     }
 
     &__col-02 {
@@ -1031,23 +1039,112 @@
     }
 
     &__item {
-        border-radius: 8px;
+        border-radius: 16px;
         border: 0.5px solid rgba(0, 0, 0, 0.5);
-        background: conic-gradient(
-                from 163deg at 48.59% 50%,
-                rgba(255, 255, 255, 0) 0deg,
-                rgba(156, 121, 250, 0.68) 0.035999999090563506deg,
-                #6e3bf8 360deg
-            ),
-            var(--white, #fff);
-        box-shadow:
-            0px 158px 44px 0px rgba(0, 0, 0, 0),
-            0px 101px 40px 0px rgba(0, 0, 0, 0),
-            0px 57px 34px 0px rgba(0, 0, 0, 0),
-            0px 25px 25px 0px rgba(0, 0, 0, 0),
-            0px 6px 14px 0px rgba(0, 0, 0, 0);
-        backdrop-filter: blur(8.296844482421875px);
         padding: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+       
+
+        &:nth-child(1) { 
+            background-image: url('../images/home-what-01.jpg');
+            position: relative;
+            z-index: 60;
+        }
+        &:nth-child(2) { 
+            background-image: url('../images/home-what-02.jpg');
+            position: relative;
+            z-index: 50;
+            top: -30px;
+            &::before { 
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                background-color: #000000;
+                opacity: 0.5;
+                transition: all 0.3s ease 0s;
+            }
+            .home-works__subtext { 
+                display: none;
+            }
+
+            &:hover {
+                z-index: 99;
+                &::before { 
+                    opacity: 0;
+                }
+                .home-works__subtext { 
+                    display: block;
+                }
+            }
+        }
+        &:nth-child(3) { 
+            background-image: url('../images/home-what-03.jpg');
+            position: relative;
+            z-index: 40;
+            top: -45px;
+            &::before { 
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                background-color: #000000;
+                opacity: 0.5;
+                transition: all 0.3s ease 0s;
+            }
+            .home-works__subtext { 
+                display: none;
+            }
+
+            &:hover {
+                z-index: 99;
+                &::before { 
+                    opacity: 0;
+                }
+                .home-works__subtext { 
+                    display: block;
+                }
+            }
+        }
+        &:nth-child(4) { 
+            background-image: url('../images/home-what-04.jpg');
+            position: relative;
+            z-index: 30;
+            top: -65px;
+            &::before { 
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 16px;
+                background-color: #000000;
+                opacity: 0.5;
+                transition: all 0.3s ease 0s;
+            }
+            .home-works__subtext { 
+                display: none;
+            }
+
+            &:hover {
+                z-index: 99;
+                &::before { 
+                    opacity: 0;
+                }
+                .home-works__subtext { 
+                    display: block;
+                }
+            }
+        }
     }
 
     &__subtitle {

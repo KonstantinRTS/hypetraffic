@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
+    z-index: 999;
     padding: 16px 0;
     &__container {
     }
@@ -32,7 +32,9 @@
         font-style: normal;
         font-weight: 300;
         line-height: 130%;
+        padding: 10px 0;
         transition: all 0.3s ease 0s;
+        display: flex;
         &:hover { 
             color: #E5F355;
         }
@@ -42,6 +44,54 @@
     }
 
     &__menu {
+        @media(max-width: 992px) { 
+            display: none;
+        }
+    }
+    
+    &__btn-menu { 
+        @media(min-width: 993px) {
+            display: none;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        position: relative;
+
+        span { 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 24px;
+            height: 24px;
+            display: flex;
+            transition: all 0.3s ease 0s;
+        }
+
+        .open { 
+            
+        }
+
+        .close {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &._active { 
+
+            .open { 
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .close { 
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
 
     &__list {

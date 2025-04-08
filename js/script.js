@@ -44,7 +44,40 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    
+
+    $('.home-works-slider').slick({
+        arrows: true,
+        appendArrows: '.home-works-slider__buttons',
+        prevArrow: '.home-works-slider__btn-prev',
+        nextArrow: '.home-works-slider__btn-next',
+        slidesToShow: 1,
+        dots: false,
+        speed: 800,
+        autoplay: false,
+        autoplaySpeed: 1200,
+        variableWidth: false,
+        centerMode: false,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                    variableWidth: false,
+                }
+            },
+        ]
+    });
+
 });
 
 window.addEventListener('load', function () {

@@ -1049,23 +1049,6 @@
   margin-bottom: -80px;
   position: relative;
 }
-.home-works::before {
-  content: "";
-  position: absolute;
-  top: 159px;
-  left: 0;
-  width: 100%;
-  height: 630px;
-  background-image: url("../images/home-img-18.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-@media (max-width: 767px) {
-  .home-works::before {
-    display: none;
-  }
-}
 @media (max-width: 767px) {
   .home-works {
     border-radius: 40px 40px 0 0;
@@ -1134,138 +1117,6 @@
     gap: 0;
   }
 }
-.home-works__col-01 {
-  width: 453px;
-  min-width: 453px;
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 992px) {
-  .home-works__col-01 {
-    width: 100%;
-    min-width: 100%;
-  }
-}
-.home-works__desc {
-  margin: auto 0 65px 0;
-  color: #000;
-  font-family: "Unbounded", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 130%;
-}
-@media (max-width: 767px) {
-  .home-works__desc {
-    margin: 0;
-  }
-}
-.home-works__col-02 {
-  width: 100%;
-}
-.home-works__item {
-  border-radius: 16px;
-  border: 0.5px solid rgba(0, 0, 0, 0.5);
-  padding: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.home-works__item:nth-child(1) {
-  background-image: url("../images/home-what-01.jpg");
-  position: relative;
-  z-index: 60;
-}
-.home-works__item:nth-child(2) {
-  background-image: url("../images/home-what-02.jpg");
-  position: relative;
-  z-index: 50;
-  top: -30px;
-}
-.home-works__item:nth-child(2)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  background-color: #000000;
-  opacity: 0.5;
-  transition: all 0.3s ease 0s;
-}
-.home-works__item:nth-child(2) .home-works__subtext {
-  display: none;
-}
-.home-works__item:nth-child(2):hover {
-  z-index: 99;
-}
-.home-works__item:nth-child(2):hover::before {
-  opacity: 0;
-}
-.home-works__item:nth-child(2):hover .home-works__subtext {
-  display: block;
-}
-.home-works__item:nth-child(3) {
-  background-image: url("../images/home-what-03.jpg");
-  position: relative;
-  z-index: 40;
-  top: -45px;
-}
-.home-works__item:nth-child(3)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  background-color: #000000;
-  opacity: 0.5;
-  transition: all 0.3s ease 0s;
-}
-.home-works__item:nth-child(3) .home-works__subtext {
-  display: none;
-}
-.home-works__item:nth-child(3):hover {
-  z-index: 99;
-}
-.home-works__item:nth-child(3):hover::before {
-  opacity: 0;
-}
-.home-works__item:nth-child(3):hover .home-works__subtext {
-  display: block;
-}
-.home-works__item:nth-child(4) {
-  background-image: url("../images/home-what-04.jpg");
-  position: relative;
-  z-index: 30;
-  top: -65px;
-}
-.home-works__item:nth-child(4)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 16px;
-  background-color: #000000;
-  opacity: 0.5;
-  transition: all 0.3s ease 0s;
-}
-.home-works__item:nth-child(4) .home-works__subtext {
-  display: none;
-}
-.home-works__item:nth-child(4):hover {
-  z-index: 99;
-}
-.home-works__item:nth-child(4):hover::before {
-  opacity: 0;
-}
-.home-works__item:nth-child(4):hover .home-works__subtext {
-  display: block;
-}
 .home-works__subtitle {
   color: #fff;
   font-family: "Unbounded", sans-serif;
@@ -1290,4 +1141,107 @@
   font-weight: 400;
   line-height: 130%;
   max-width: 260px;
+}
+.home-works__slider {
+  margin-top: 60px;
+  position: relative;
+}
+@media (max-width: 1272px) {
+  .home-works__slider {
+    margin-top: calc(40px + 20 * (100vw - 360px) / 912);
+  }
+}
+
+.home-works-slider {
+  margin: 0 -8px;
+}
+.home-works-slider__item {
+  padding: 0 8px;
+}
+.home-works-slider__item._one .home-works-slider__wrapper {
+  background-image: url("../images/home-slide-01.jpg");
+}
+.home-works-slider__item._two .home-works-slider__wrapper {
+  background-image: url("../images/home-slide-02.jpg");
+}
+.home-works-slider__item._three .home-works-slider__wrapper {
+  background-image: url("../images/home-slide-03.jpg");
+}
+.home-works-slider__item._four .home-works-slider__wrapper {
+  background-image: url("../images/home-slide-04.jpg");
+}
+.home-works-slider__wrapper {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  padding-right: 120px;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 8px;
+}
+@media (max-width: 1272px) {
+  .home-works-slider__wrapper {
+    padding-right: calc(16px + 104 * (100vw - 360px) / 912);
+  }
+}
+@media (max-width: 1272px) {
+  .home-works-slider__wrapper {
+    padding-left: calc(16px + 104 * (100vw - 360px) / 912);
+  }
+}
+@media (max-width: 767px) {
+  .home-works-slider__wrapper {
+    height: 530px;
+    justify-content: flex-start;
+  }
+}
+.home-works-slider__wrapper .number {
+  color: #6e3bf8;
+  font-family: "Unbounded", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+.home-works-slider__wrapper .title {
+  margin: 8px 0 0 0;
+  color: #fff;
+  font-family: "Unbounded", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: capitalize;
+  max-width: 50%;
+}
+@media (max-width: 767px) {
+  .home-works-slider__wrapper .title {
+    max-width: 100%;
+  }
+}
+.home-works-slider__wrapper .text {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  max-width: 480px;
+  margin: 0 0 65px 0;
+}
+.home-works-slider__buttons {
+  position: absolute;
+  bottom: 50px;
+  left: 120px;
+}
+@media (max-width: 1272px) {
+  .home-works-slider__buttons {
+    left: calc(16px + 104 * (100vw - 360px) / 912);
+  }
 }/*# sourceMappingURL=home.css.map */

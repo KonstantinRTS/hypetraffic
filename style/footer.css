@@ -11,12 +11,21 @@
 @media (max-width: 767px) {
   .footer {
     border-radius: 40px 40px 0 0;
+    padding: 60px 0 90px 0;
+    background-size: contain;
   }
 }
 .footer__body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+}
+@media (max-width: 767px) {
+  .footer__body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
 .footer__col-01 {
   grid-column-start: 1;

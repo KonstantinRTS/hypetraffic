@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+    new WOW().init();
+
+    const btnMenu = document.querySelector('.header__btn-menu');
+    const menu = document.querySelector('.header__menu');
+    const headerBody = document.querySelector('.header__body');
+
+    if (btnMenu && menu && headerBody) {
+        btnMenu.addEventListener('click', function () {
+            this.classList.toggle('_active');
+            menu.classList.toggle('_active');
+            headerBody.classList.toggle('_active');
+        });
+    }
+
     const isOnMainPage =
         window.location.pathname === '/' ||
         window.location.pathname.endsWith('/index.html');
@@ -21,8 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
 
                     history.pushState(null, '', `#${anchorId}`);
+
+                    btnMenu?.classList.remove('_active');
+                    menu?.classList.remove('_active');
+                    headerBody?.classList.remove('_active');
                 }
             });
         });
     }
+
+    
 });

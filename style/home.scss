@@ -1,7 +1,7 @@
 @import "mixin";
 
 .home-hero {
-    padding: 156px 0 300px 0;
+    padding: 156px 0 132px 0;
     overflow: hidden;
     background-image: url("../images/home-hero-07.png");
     background-repeat: no-repeat;
@@ -24,6 +24,17 @@
         font-weight: 400;
         line-height: 100%;
         text-transform: capitalize;
+    }
+
+    &__subtitle {
+        @include adaptiv-value("margin-top", 80, 60, 1);
+        color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        font-family: "Unbounded", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
     }
 
     &__text {
@@ -67,10 +78,15 @@
     }
 
     &__image {
-        position: absolute;
-        bottom: 115px;
-        left: 50%;
-        transform: translate(-50%, 0);
+        margin: 24px auto 0 auto;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 
@@ -1017,7 +1033,7 @@
     }
 
     &__slider {
-        @include adaptiv-value('margin-top', 60, 40, 1);
+        @include adaptiv-value("margin-top", 60, 40, 1);
         position: relative;
     }
 }
@@ -1087,7 +1103,7 @@
             line-height: 120%;
             text-transform: capitalize;
             max-width: 50%;
-            @media(max-width: 767px) { 
+            @media (max-width: 767px) {
                 max-width: 100%;
             }
         }
@@ -1107,6 +1123,6 @@
     &__buttons {
         position: absolute;
         bottom: 50px;
-        @include adaptiv-value('left', 120, 16, 1);
+        @include adaptiv-value("left", 120, 16, 1);
     }
 }

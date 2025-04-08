@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1465FF;
+  background-color: #000000;
 }
 #preloader img {
   display: flex;

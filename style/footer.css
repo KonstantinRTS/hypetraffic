@@ -31,18 +31,23 @@
   grid-column-start: 1;
 }
 .footer__logo {
-  color: var(--white, #FFF);
+  /* color: var(--white, #FFF);
   text-align: center;
-  font-family: "Unbounded", sans-serif;
+  font-family: 'Unbounded', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
   padding: 10px;
   transition: all 0.3s ease 0s;
+  &:hover { 
+      color: #E5F355;
+  } */
 }
-.footer__logo:hover {
-  color: #E5F355;
+.footer__logo img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .footer__col-02 {
   grid-column-start: 2;

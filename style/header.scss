@@ -13,7 +13,7 @@
     &__body {
         border-radius: 100px;
         border: 0.5px solid rgba(240, 241, 241, 0.5);
-        padding: 0 16px;
+        padding: 0 16px 0 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -25,7 +25,11 @@
     }
 
     &__logo {
-        color: #fff;
+        img { 
+            width: 200px;
+            object-fit: cover;
+        }
+        /* color: #fff;
         text-align: center;
         font-family: "Unbounded", sans-serif;
         font-size: 12px;
@@ -39,7 +43,7 @@
         z-index: 50;
         &:hover {
             color: #e5f355;
-        }
+        } */
     }
 
     &__col-02 {

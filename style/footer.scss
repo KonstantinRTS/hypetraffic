@@ -33,7 +33,11 @@
     }
 
     &__logo { 
-        color: var(--white, #FFF);
+        img { 
+            width: 200px;
+            object-fit: cover;
+        }
+        /* color: var(--white, #FFF);
         text-align: center;
         font-family: 'Unbounded', sans-serif;
         font-size: 20px;
@@ -44,7 +48,7 @@
         transition: all 0.3s ease 0s;
         &:hover { 
             color: #E5F355;
-        }
+        } */
     }
 
     &__col-02 {
